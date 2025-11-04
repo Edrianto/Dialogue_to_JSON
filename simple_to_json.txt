@@ -1,0 +1,19 @@
+speaker
+text
+next
+\
+start
+Old Man
+Hello bro what is up my guy
+damn_he_chill
+\
+damn_he_chill
+Old Man
+It do be nice weather tho
+damn_he_really_chill
+\
+damn_he_really_chill
+Old Man
+See ya i guess my G
+end
+#

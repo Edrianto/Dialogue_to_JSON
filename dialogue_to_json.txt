@@ -1,0 +1,71 @@
+speaker
+text
+choices[{text,next}]!
+conditions{}!
+event[]
+next
+\
+start
+Old man
+Ah! A traveler... What brings you here?
+{I'm looking for an adventure|adventure_path}={Just passing through|passing_path}
+-
+talked_to_old_man=rep_increase
+-
+\
+gratitude_start
+Old Man
+Hello again, most esteemed traveler... Anything you need?
+{I'm looking for adventure.|adventure_path}={Just passing through|passing_path}
+sword_recovered|sword_recovered_quest_claimed
+-
+-
+\
+adventure_path
+Old man
+Adventure, eh? Then perhaps you can help me with something.
+{What do you need?|quest_offer}={Sorry, I don't have time|end}
+-
+-
+-
+\
+passing_path
+Old man
+Then may the road be kind to you, traveller
+-
+-
+-
+end
+\
+quest_offer
+Old man
+Bandits stole my family sword. If you recover it, it's yours to keep.
+{I'll find it for you.|accept_quest}={That sounds dangerous.|decline_quest}
+-
+-
+-
+\
+accept_quest
+Old Man
+You have my thanks. The bandits were last seen near the northern hills.
+-
+-
+start_bandit_quest
+end
+\
+decline_quest
+Old Man
+A shame. Few have the courage these days.
+-
+-
+-
+end
+\
+end
+SYSTEM
+DIALOGUE FINISHED.
+-
+-
+-
+-
+#
